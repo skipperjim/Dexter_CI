@@ -38,9 +38,17 @@
 |
 */
 
-$route['default_controller'] = "welcome";
-$route['404_override'] = '';
+// ORIGINAL ROUTING CONFIG BELOW
+//$route['default_controller'] = "welcome";
+//$route['404_override'] = '';
 
+// CUSTOM CONFIG
+$route['photos/(:any)'] = 'photos/view/$1';
+$route['photos'] = 'photos';
+$route['videos/(:any)'] = 'videos/view/$1';
+$route['videos'] = 'videos';
+$route['(:any)'] = 'pages/view/$1';
+$route['default_controller'] = 'pages/view';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.2.xsd">
+    <changeSet author="sgray" id="1">
+        <createTable tableName="photos">
+            <column autoIncrement="true" name="id" type="INT(10)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="file_name" type="VARCHAR(64)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="group_id" type="VARCHAR(45)"/>
+            <column name="path" type="VARCHAR(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(512)"/>
+        </createTable>
+    </changeSet>
+
+	<changeSet id="2" author ="sgray">
+		<createTable tableName="videos">
+			<column name="id" type="int(11)">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="file_name" type="varchar(64)">
+				<constraints nullable="false" />
+			</column>
+			<column name="group_id" type="varchar(45)">
+				<constraints unique="true" nullable="false" />
+			</column>
+			<column name="path" type="varchar(256)">
+				<constraints unique="true" nullable="false" />
+			</column>
+			<column name="description" type="varchar(512)">
+				<constraints unique="true" nullable="false" />
+			</column>
+		</createTable>
+	</changeSet>
+
+</databaseChangeLog>
