@@ -4,6 +4,6 @@
 	<div class="main">
 		<?php echo $photo['path']?>
 	</div>
-	<p><?php echo "<img id='Image_${photo['id']}' src='http://dexter.localhost/${photo['path']}/${photo['file_name']}' alt='Dexter!!' style='display: inline-block;' width='270px' height='480'>"?></p>
+	<p><?php echo "<img id='Image_${photo['id']}' src='".base_url("/${photo['path']}${photo['file_name']}")."' alt='Dexter!!' style='display: inline-block;' width='270px' height='480'>"?></p>
 
 <?php endforeach ?>

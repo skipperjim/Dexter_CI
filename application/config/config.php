@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://ci_dexter.localhost';
+$config['base_url']	= 'http://localhost/dexter_ci';
 
 /*
 |--------------------------------------------------------------------------

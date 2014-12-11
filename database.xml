@@ -16,7 +16,7 @@
         </createTable>
     </changeSet>
 
-	<changeSet id="2" author ="sgray">
+	<changeSet id="2" author="sgray">
 		<createTable tableName="videos">
 			<column name="id" type="int(11)">
 				<constraints primaryKey="true" nullable="false" />
