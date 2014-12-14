@@ -6,24 +6,24 @@
 
       <div class="masthead clearfix">
         <div class="inner">
-          <h3 class="masthead-brand">Cover</h3>
+          <!-- <h3 class="masthead-brand">Cover</h3> -->
           <nav>
             <ul class="nav masthead-nav">
               <li class="active"><a href="<?php echo base_url()?>">Home</a></li>
               <li><a href="<?php echo base_url('index.php/photos')?>">Photos</a></li>
               <li><a href="<?php echo base_url('index.php/videos')?>">Videos</a></li>
-              <li><a href="<?php echo base_url('index.php/game')?>">Game!</a></li>
+              <li><a href="<?php echo base_url('index.php/game')?>">Interactive Game!</a></li>
             </ul>
           </nav>
         </div>
       </div>
 
       <div class="inner cover">
-        <h1 class="cover-heading">Cover your page.</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-        <p class="lead">
+        <h1 class="cover-heading">Welcome to Dexter Gray's Website</h1>
+        <p class="lead">My name is Steven Gray, and I am Dexter's father. I decided to create a custom website for him, specifically to show off his photos and videos. I plan on integrating them with the interactive game website. You can check it out by clicking the link above. It is still a work in progress.</p>
+        <!-- <p class="lead">
           <a href="#" class="btn btn-lg btn-default">Learn more</a>
-        </p>
+        </p> -->
       </div>
 
       <!-- <div class="mastfoot">
