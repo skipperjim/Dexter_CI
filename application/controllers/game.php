@@ -15,9 +15,17 @@ class Game extends CI_Controller {
 	}
 
 	public function view($slug){
+		$data['title'] = "Dexter's Interactive Website Game!";
+
 		$this->load->view('templates/header', $data);
 		$this->load->view('game/view', $data);
 		$this->load->view('templates/footer');
+	}
+
+	public function weltmeister(){
+		//$this->load->view('templates/header');
+		$this->load->view('game/weltmeister');
+		//$this->load->view('templates/footer');
 	}
 
 }

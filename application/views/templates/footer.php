@@ -1,8 +1,18 @@
-<div id="footer">
-	<?php $this->load->view('templates/chat/chat.html');?>
-</div>
+<!-- <div id="footer">
+	<?php //$this->load->view('templates/chat/chat.html');?>
+</div> -->
 
 <!-- Starting tags are located in application/views/templates/header.php	 -->
+		</div>
+	</div>
+</div>
+
+<div class="mastfoot" style="margin: 0 auto; color: white;">
+	<div class="inner">
+		<p>Created by Steven Gray &ndash; Last updated @ December 14, 2014 <br/> Most Definitely Under Construction</p>
+	</div>
+</div>
+
 </body>
 </html>
 

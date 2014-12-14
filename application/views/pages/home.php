@@ -1,13 +1,13 @@
-<div class="site-wrapper">
+<!-- <div class="site-wrapper">
       
   <div class="site-wrapper-inner">
     
     <div class="cover-container">
 
       <div class="masthead clearfix">
-        <div class="inner">
+        <div class="inner"> -->
           <!-- <h3 class="masthead-brand">Cover</h3> -->
-          <nav>
+ <!--          <nav>
             <ul class="nav masthead-nav">
               <li class="active"><a href="<?php echo base_url()?>">Home</a></li>
               <li><a href="<?php echo base_url('index.php/photos')?>">Photos</a></li>
@@ -16,7 +16,7 @@
             </ul>
           </nav>
         </div>
-      </div>
+      </div> -->
 
       <div class="inner cover">
         <h1 class="cover-heading">Welcome to Dexter Gray's Website</h1>
@@ -31,9 +31,9 @@
           <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
         </div>
       </div> -->
-
+<!-- 
     </div>
 
   </div>
 
-</div>
+</div> -->

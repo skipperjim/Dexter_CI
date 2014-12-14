@@ -43,12 +43,14 @@
 //$route['404_override'] = '';
 
 // CUSTOM CONFIG
-$route['photos/(:any)'] = 'photos/view/$1';
+$route['photos/(:any)'] = 'photos/$1';
 $route['photos'] = 'photos';
-$route['videos/(:any)'] = 'videos/view/$1';
+$route['videos/(:any)'] = 'videos/$1';
 $route['videos'] = 'videos';
-$route['game/(:any)'] = 'game/view/$1';
+$route['game/(:any)'] = 'game/$1';
 $route['game'] = 'game';
+$route['chat/(:any)'] = 'chat/$1';
+$route['chat'] = 'chat';
 
 /*$route['media/(:any)'] = '/assets/media/';
 $route['media'] = 'media';*/

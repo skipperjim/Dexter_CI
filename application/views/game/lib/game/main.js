@@ -1,5 +1,3 @@
-var base_url = '/';
-
 ig.module( 
 	'game.main' 
 )
@@ -8,6 +6,7 @@ ig.module(
 	'impact.font',
     'game.levels.Apartment1',
     'game.levels.Apartment2',
+    'game.levels.Apartment3',
     'impact.timer',
     'impact.debug.debug'
 )
@@ -15,7 +14,7 @@ ig.module(
 
 MyGame = ig.Game.extend({
 	// Load a font
-	font: new ig.Font( '/assets/media/game/04b03.font.png'),
+	font: new ig.Font('/assets/media/game/04b03.font.png'),
 	gravity: 300,
     statText: new ig.Font('/assets/media/game/04b03.font.png'),
     showStats: false,
@@ -106,7 +105,7 @@ MyGame = ig.Game.extend({
 });
 
 StartScreen = ig.Game.extend({
-    mainCharacter: new ig.Image('/assets/media/game/dexter-title-screen.png'),
+    mainCharacter: new ig.Image('/assets/media/game/new-title-screen.png'),
     title: new ig.Image('/assets/media/game/dexter-title-text.png'),
     instructText: new ig.Font('/assets/media/game/04b03.font.png'),
     background: new ig.Image('/assets/media/game/screen-bg.png'),
