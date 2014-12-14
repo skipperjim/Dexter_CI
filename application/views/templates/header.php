@@ -13,7 +13,7 @@
 	<!-- Custom styles for this template -->
     <link href="<?php echo base_url("assets/css/templates/cover.css"); ?>" rel="stylesheet">
 
-	<title><?php echo $title ?> - CodeIgniter 2 Tutorial</title>
+	<title><?php echo $title ?></title>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

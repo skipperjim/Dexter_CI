@@ -1,0 +1,35 @@
+<div id="Chatbox">
+	<ul id="messages" class="chats"></ul>
+    <form id="chatform" action="">
+      <input id="message" placeholder="Write something.." autocomplete="off" /><button>Send</button>
+    </form>
+	<!-- <strong>Dexter Gray's Website &copy; 2014</strong> -->
+</div>
+
+<script>
+  var socket = io();
+  $('form').submit(function(){
+    socket.emit('chat message', $('#m').val());
+    $('#message').val('');
+    return false;
+  });
+  socket.on('chat message', function(msg){
+    $('#messages').append($('<li>').text(msg));
+  });
+</script>
+<!-- End of socket.io -->
+
+<style>
+/* Chatbox styling */
+div#Chatbox * { margin: 0; padding: 0; box-sizing: border-box; }
+div#Chatbox form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+div#Chatbox form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; color:black;}
+div#Chatbox form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages li { padding: 5px 10px; }
+#messages li:nth-child(odd) { background: #eee; }
+</style>
+
+<!-- socket.io scripts for the chat -->
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
