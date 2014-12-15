@@ -12,8 +12,8 @@
 
 	<!-- Custom styles for this template -->
     <link href="<?php echo base_url("assets/css/templates/cover.css"); ?>" rel="stylesheet">
-
-	<title><?php echo $title ?> - CodeIgniter 2 Tutorial</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<title><?php echo $title ?></title>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,3 +26,22 @@
 	<!-- <div class="page-header">
 		<h1>Welcome to Dexter's Website</h1>
 	</div> -->
+<div class="site-wrapper">
+      
+  <div class="site-wrapper-inner">
+    
+    <div class="cover-container">
+
+      <div class="masthead clearfix">
+        <div class="inner">
+          <!-- <h3 class="masthead-brand">Cover</h3> -->
+          <nav>
+            <ul class="nav masthead-nav">
+              <li class="active"><a href="<?php echo base_url()?>">Home</a></li>
+              <li><a href="<?php echo base_url('index.php/photos')?>">Photos</a></li>
+              <li><a href="<?php echo base_url('index.php/videos')?>">Videos</a></li>
+              <li><a href="<?php echo base_url('index.php/game')?>">Interactive Game!</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>

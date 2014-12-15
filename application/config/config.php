@@ -14,7 +14,8 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://ci_dexter.it-gray';
+$config['base_url']	= 'http://dexter_ci.localhost/';
+//$config['base_url']	= 'http://dexterlonggray.com/';
 
 /*
 |--------------------------------------------------------------------------
