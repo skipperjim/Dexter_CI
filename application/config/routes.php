@@ -51,6 +51,8 @@ $route['game/(:any)'] = 'game/$1';
 $route['game'] = 'game';
 $route['chat/(:any)'] = 'chat/$1';
 $route['chat'] = 'chat';
+$route['account/(:any)'] = 'account/$1';
+$route['account'] = 'login';
 
 /*$route['media/(:any)'] = '/assets/media/';
 $route['media'] = 'media';*/

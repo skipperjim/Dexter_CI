@@ -36,4 +36,33 @@
 		</createTable>
 	</changeSet>
 
+	<changeSet id="3" author="sgray">
+		<createTable tableName="users">
+			<column name="id" type="int(11)">
+				<constraints primaryKey="true" nullable="false"/>
+			</column>
+			<column name="username" type="varchar(16)">
+				<constraints unique="true" nullable="false"/>
+			</column>
+			<column name="email" type="varchar(64)">
+				<constraints unique="true" nullable="true"/>
+			</column>
+			<column name="password" type="varchar(64)">
+				<constraints unique="false" nullable="false"/>
+			</column>
+			<column name="first_name" type="varchar(32)">
+				<constraints unique="false" nullable="true"/>
+			</column>
+			<column name="last_name" type="varchar(32)">
+				<constraints unique="false" nullable="true"/>
+			</column>
+			<column name="city" type="varchar(32)">
+				<constraints unique="false" nullable="true"/>
+			</column>
+			<column name="state" type="varchar(24)">
+				<constraints unique="false" nullable="true"/>
+			</column>
+		</createTable>
+	</changeSet>
+
 </databaseChangeLog>

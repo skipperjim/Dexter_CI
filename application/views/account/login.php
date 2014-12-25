@@ -1,19 +1,11 @@
-<link rel="stylesheet" href="<?php echo base_url("assets/css/signin-template.css"); ?>" />
-
-<div class="container">
-
-      <form class="form-signin" role="form">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      </form>
-
-    </div> <!-- /container -->
+<h1>Simple Login with CodeIgniter</h1>
+<?php echo validation_errors(); ?>
+<?php echo form_open('verifylogin'); ?>
+    <label for="username">Username:</label>
+    <input type="text" size="20" id="username" name="username"/>
+    <br/>
+    <label for="password">Password:</label>
+    <input type="password" size="20" id="passowrd" name="password"/>
+    <br/>
+    <input type="submit" value="Login"/>
+</form>
