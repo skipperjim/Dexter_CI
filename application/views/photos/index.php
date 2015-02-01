@@ -1,17 +1,18 @@
-<div class="grid">
-    <?php foreach ($photos as $photo): ?>
-        <?php
-            echo "<img class='img_item' id='Image_${photo['id']}' src='".base_url("/${photo['path']}/${photo['file_name']}")."' height='275'/>";
-    endforeach;
-    ?>
-
-    <style>
-        body { margin: 0; }
-    </style>
-</div>
-
-<script>
-    $(document).ready(function(){
-        console.log("document ready");
-    });
-</script>
+<?php
+$path = 'assets/photo/dexter/';
+if ($handle = opendir($path)) {
+    $i = 1;
+    echo "<div class='grid'>";
+    while (false !== ($file = readdir($handle))) {
+        if ('.' === $file) continue;
+        if ('..' === $file) continue;
+        echo "<img class='img_item' id='Image_".$i."' src='".base_url($path)."/".$file."' height='275'></img>";
+        $i++;
+    }
+    echo "</div>";
+    closedir($handle);
+}
+?>
+<style>
+    body { margin: 0; }
+</style>
